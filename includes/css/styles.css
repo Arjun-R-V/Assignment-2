@@ -20,9 +20,7 @@ Notes:	 Hand coded for Udemy.com
   margin: 0 0 20px;
 }
 
-#Message{
-  margin-bottom: 15px;
-}
+
 .footer{
   width: 100%;
   background: #333;
@@ -63,6 +61,21 @@ ul.unstyled{
 {
   font-size: 18px;
 }
+.Info h3
+{
+  color: red;
+  text-decoration: underline;
+}
+.Info h4
+{
+  color: red;
+  text-decoration: underline;
+}
+#moreinfo h3
+{
+  color: red;
+  text-decoration: underline;
+}
 .conservation
 {
   font-size: 18px;
@@ -72,6 +85,17 @@ ul.unstyled{
 font-size: 23px;
 color: red;
 text-decoration: underline;
+
+}
+.main
+{
+  font-size: 18px;
+}
+h2
+{
+  font-size: 23px;
+  color: red;
+  text-decoration: underline;
 }
 .navbar
 {
@@ -100,6 +124,9 @@ text-decoration: underline;
 #myCarousel .item{
 height: 400px;
 }
+#myCarouse2 .item{
+height: 400px;
+}
 #slide1{
   background: url('../../images/m11.jpg') top center no-repeat;
 }
@@ -109,8 +136,29 @@ height: 400px;
 #slide3{
   background: url('../../images/m3.jpg') top center no-repeat;
 }
+#slide4{
+  background: url('../../images/PTM1.jpg') top center no-repeat;
+}
+#slide5{
+  background: url('../../images/PTM2.jpg') top center no-repeat;
+}
+#slide6{
+  background: url('../../images/PTM3.jpg') top center no-repeat;
+}
+#slide7{
+  background: url('../../images/PEM1.jpg') top center no-repeat;
+}
+#slide8{
+  background: url('../../images/PEM2.jpg') top center no-repeat;
+}
+#slide9{
+  background: url('../../images/PEM3.jpg') top center no-repeat;
+}
 
 #myCarousel{
+  margin-top: 60px;
+}
+#myCarouse2{
   margin-top: 60px;
 }
 .carousel-caption{
@@ -125,19 +173,14 @@ height: 400px;
    Media Queries
    -------------------------------------- */
 
-/* Portrait & landscape phone */
-@media (max-width: 480px) {
-.thumbnail .price{
-  font-size: 14px;
-}
-.thumbnail .price sup{
-  font-size: 10px;
-}
-}
+
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   #myCarousel .item{
+  height: 310px;
+  }
+  #myCarouse2 .item{
   height: 310px;
   }
   #slide1{
@@ -149,17 +192,36 @@ height: 400px;
   #slide3{
     background: url('../../images/small3.jpg') top center no-repeat;
   }
+  #slide7{
+    background: url('../../images/PEM1.jpg') top center no-repeat;
+  }
+  #slide8{
+    background: url('../../images/PEM2.jpg') top center no-repeat;
+  }
+  #slide9{
+    background: url('../../images/PEM3.jpg') top center no-repeat;
+  }
+
   .carousel-caption{
     font-size: 12px;
   }
   .carousel-caption h4{
     font-size: 22px;
   }
+  .conservation
+  {
+    margin-top: 10%;
+  }
 }
 
 /* Large desktop */
 @media (min-width: 1200px) {
-  #myCarousel .item{
+  .conservation
+  {
+    margin-top: 10%;
+  }
+  #myCarousel .item
+  {
   height: 500px;
   }
   #slide1{
@@ -180,13 +242,29 @@ height: 400px;
   #slide6{
     background: url('../../images/large33.jpg') top center no-repeat;
       }
-  #slide7{
-      background: url('../../images/large11.jpg') top center no-repeat;
-          }
-  #slide8{
-     background: url('../../images/large22.jpg') top center no-repeat;
-              }
-  #slide9{
-    background: url('../../images/large33.jpg') top center no-repeat;
-                  }
+
+#myCarouse2 .item
+{
+  height: 500px;
+}
+  #slide7
+  {
+      background: url('../../images/large77.jpg') top center no-repeat;
+  }
+  #slide8
+  {
+     background: url('../../images/large88.jpg') top center no-repeat;
+  }
+  #slide9
+  {
+    background: url('../../images/large9.jpg') top center no-repeat;
+  }
+}
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+.conservation
+{
+  margin-top: 20%;
+}
 }
